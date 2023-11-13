@@ -1,0 +1,26 @@
+@startuml
+
+interface Work {
+    {abstract} void doWork1()
+    {abstract} void doWork2()
+}
+
+class MyTest {
+    void TestWork(Work w)
+}
+
+class "Anonymous Object 1" {
+    doWork1()
+    doWork2()
+}
+
+class "Anonymous Object 2" {
+    doWork1()
+    doWork2()
+}
+
+Work <|.. "Anonymous Object 1"
+Work <|.. "Anonymous Object 2"
+"MyTest" ..> "Anonymous Object 2": uses >>
+
+@enduml

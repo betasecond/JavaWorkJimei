@@ -1,0 +1,500 @@
+package edu.jimei;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+        // Press Alt+Enter with your caret at the highlighted text to see how
+        // IntelliJ IDEA suggests fixing it.
+        System.out.printf("Hello and welcome!");
+
+        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
+        for (int i = 1; i <= 5; i++) {
+
+            // Press Shift+F9 to start debugging your code. We have set one breakpoint
+            // for you, but you can always add more by pressing Ctrl+F8.
+            System.out.println("i = " + i);
+        }
+    }
+}
+
+package edu.jimei;
+
+public class SomeException extends Exception {
+    public SomeException(String message) {
+        super(message);
+    }
+}
+
+package edu.jimei.four;
+
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
+public class Course {
+    private String courseName;
+
+    public Course(String courseName) {
+        setCourseName(courseName);
+    }
+
+}
+
+
+package edu.jimei.four;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
+@Setter @Getter
+public class Student {
+    private String name;
+    @Getter
+    private List<Course> coursesTaken;
+
+    public Student(String name) {
+        this.name = name;
+        this.coursesTaken = new ArrayList<>();
+    }
+
+    public void takeCourse(Course course) {
+        coursesTaken.add(course);
+    }
+
+}
+
+
+package edu.jimei.four;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Getter @Setter
+public class Teacher {
+    private String name;
+    @Getter
+    private List<Course> coursesTaught;
+
+    public Teacher(String name) {
+        this.name = name;
+        this.coursesTaught = new ArrayList<>();
+    }
+
+    public void teachCourse(Course course) {
+        coursesTaught.add(course);
+    }
+
+}
+
+package edu.jimei.one;
+
+import edu.jimei.SomeException;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.logging.Logger;
+
+@Getter
+@Setter
+public class Circle{
+    private static final Logger LOGGER = Logger.getLogger(Circle.class.getName());
+
+    private final double pi = Math.PI;
+    private double radius;
+    private double perimeter;
+    private double area;
+
+    Circle(){};
+    Circle(double value,int setModel){
+        switch (setModel){
+            case 0 ->{
+                setRadius(value);
+            }
+            case 1 ->{
+                setPerimeter(value);
+            }
+            case 2 ->{
+                setArea(value);
+            }
+            default -> {
+
+            }
+        }
+        try{
+            Count(setModel);
+        }catch (SomeException e){
+            LOGGER.severe("Error calculating circle properties: " + e.getMessage());
+        }finally {
+
+        }
+
+
+    };
+    void Count(int set_model) throws SomeException{
+        switch (set_model){
+
+            case 0 -> {
+                if(this.radius==0){
+                    throw new SomeException("Radius cannot be zero.");
+                }
+                this.perimeter = this.radius*this.pi*2;
+                this.area = Math.pow(this.radius,2)*this.pi;
+            }
+            case 1 -> {
+                if(this.perimeter ==0){
+
+
+                    LOGGER.info("This is an info message");
+                    throw new SomeException("Perimeter cannot be zero.");
+
+                }
+                this.radius = this.perimeter /(2.0*this.pi);
+                this.area = Math.pow(this.radius,2)*this.pi;
+            }
+            case 2 -> {
+                if(this.area ==0){
+
+
+                    LOGGER.info("This is an info message");
+                    throw new SomeException("Area cannot be zero.");
+
+                }
+                this.radius = Math.pow(this.area /pi,0.5);
+                this.perimeter = this.radius*this.pi*2;
+            }
+            default -> {
+                LOGGER.info("This is an info message");
+                throw new SomeException("Invalid set model.");
+
+            }
+        }
+
+    }
+    StringBuilder Callback() throws SomeException{
+        StringBuilder status = new StringBuilder();
+
+        status.append("Circle properties:\n");
+        if(this.radius==0){
+            throw new SomeException("radius have no value");
+        }
+        if(this.perimeter ==0){
+            throw new SomeException("perimeter hava no value");
+        }
+        if(this.area ==0){
+            throw new SomeException("Area have no value");
+        }
+        status.append("Circle properties: Radius:").append(this.getRadius());
+        status.append("\nCircle properties: Perimeter:").append(this.getPerimeter());
+        status.append("\nCircle properties: Area:").append(this.getArea());
+        return status;
+    }
+
+}
+
+package edu.jimei.one;
+import java.util.Scanner;
+
+import edu.jimei.SomeException;
+import lombok.Getter;
+import lombok.Setter;
+
+
+import java.util.logging.Logger;
+
+
+public class Solution1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int set_model= scanner.nextInt();
+        double radius_Perimeter_Area = scanner.nextDouble();
+        try{
+            Circle circle = new Circle(radius_Perimeter_Area,set_model);
+            String result = String.valueOf(circle.Callback());
+            System.out.println(result);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+}
+
+//异常类
+
+
+package edu.jimei.three;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+class WildAnimal{
+    // 实例变量
+    private String size;
+
+    // 类方法
+    // 类变量
+
+    // 重载的方法，允许设置并返回活动区域
+    @Getter
+    private static String activityArea;
+
+    // 构造方法
+    public WildAnimal() {
+    }
+
+    public WildAnimal(String size) {
+        this.size = size;
+    }
+
+    // 实例方法
+    public String getActivityStyle() {
+        return "Walking"; // 默认的活动方式
+    }
+
+    public String getActivityStyle(String style) {
+        return style; // 重载的方法，允许指定活动方式
+    }
+
+    public static String getActivityArea(String area) {
+        activityArea = area;
+        return activityArea; // 重载的方法，允许设置并返回活动区域
+    }
+}
+
+
+package edu.jimei.two;
+
+public class computer extends subject{
+    public computer(){};
+    public computer(double score){
+        super(score,1.0);
+    }
+    public computer(double score, double weights){
+        super(score,weights);
+    }
+}
+
+
+package edu.jimei.two;
+
+public class english extends subject{
+    public english(){};
+    public english(double score){
+        super(score,1.0);
+    }
+    public english(double score,double weights){
+        super(score,weights);
+    }
+}
+
+
+
+package edu.jimei.two;
+
+public class math extends subject{
+    public math(){};
+    public math(double score){
+        super(score,1.0);
+    }
+    public math(double score,double weights){
+        super(score,weights);
+    }
+}
+
+
+package edu.jimei.two;
+
+public class politc extends subject{
+    public politc(){};
+    public politc(double score){
+        super(score,1.0);
+    }
+    public politc(double score, double weights){
+        super(score,weights);
+    }
+}
+
+package edu.jimei.two;
+
+import edu.jimei.SomeException;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@Getter
+@Setter
+class Student{
+    private String name;
+    /*
+     *  Map:
+     *   key : String 学科名
+     *   value : subject
+     * */
+    private Map<String,subject> subjects = new HashMap<>();
+
+    public Student(String name){
+        setName(name);
+    }
+
+    //add subjcet
+    public void addSubject(String subjectName,subject subjectSelf){
+        getSubjects().put(subjectName,subjectSelf);
+    }
+    public double averageScore() throws SomeException {
+        double totalScore = 0;
+        int count = 0;
+        if(getSubjects().isEmpty()){throw new SomeException("subjects have no value");}
+        for (subject subjectself:getSubjects().values()) {
+            totalScore += subjectself.getScore();
+            count++;
+        }
+        if(count == 0){
+            return 0;
+        }
+
+        return totalScore / count;
+    }
+
+    public double weightsAverageScore() throws SomeException{
+        double totalWeightsScore = 0;
+        int count = 0;
+        if(getSubjects().isEmpty()){throw new SomeException("subjects have no value");}
+        for (subject subjectself:getSubjects().values()) {
+            totalWeightsScore += subjectself.WeightedValue();
+            count++;
+        }
+        if(count == 0){
+            return 0;
+        }
+
+        return totalWeightsScore / count;
+    }
+
+}
+
+package edu.jimei.two;
+
+import edu.jimei.SomeException;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+abstract class subject{
+    private Double Score;
+    private Double Weights;
+
+    public subject(){}
+    public subject(double score){
+        this.setScore(score);
+    }
+    public subject(double score,double Weights){
+        this.setScore(score);
+        this.setWeights(Weights);
+    }
+    public double WeightedValue() throws SomeException {
+        if(this.getScore()==0){throw new SomeException("score have no value");}
+        if(this.getWeights()==0){throw new SomeException("weights have no value");}
+        return this.getScore()*this.getWeights();
+    }
+
+}
+
+package edu.jimei.four;
+
+public class MainTest {
+    public static void main(String[] args) {
+        Teacher teacher = new Teacher("Mr. Smith");
+        Course math = new Course("Math");
+        Course science = new Course("Science");
+        teacher.teachCourse(math);
+        teacher.teachCourse(science);
+
+        Student student = new Student("Alice");
+        student.takeCourse(math);
+
+        System.out.println("Courses taught by " + teacher.getName() + ":");
+        for (Course course : teacher.getCoursesTaught()) {
+            System.out.println(course.getCourseName());
+        }
+
+        System.out.println("Courses taken by " + student.getName() + ":");
+        for (Course course : student.getCoursesTaken()) {
+            System.out.println(course.getCourseName());
+        }
+    }
+}
+
+
+package edu.jimei.one;
+
+public class MainTest {
+}
+
+
+package edu.jimei.three;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class MainTest{
+    private WildAnimal animal; // 将animal设为类的成员变量
+
+    @BeforeEach
+    public void setWildAnimal() {
+        animal = new WildAnimal("Large");
+    }
+
+    @Test
+    public void testWildAnimal() {
+        System.out.println("Animal size: " + animal.getSize());
+        System.out.println("Activity style: " + animal.getActivityStyle());
+        System.out.println("Activity style (custom): " + animal.getActivityStyle("Running"));
+
+        WildAnimal.getActivityArea("little rookie");
+        System.out.println("Activity area: " + WildAnimal.getActivityArea());
+        System.out.println("Activity area (custom): " + WildAnimal.getActivityArea("Jungle"));
+    }
+}
+
+
+package edu.jimei.two;
+import edu.jimei.SomeException;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class MainTest {
+    private Student student;
+    @BeforeEach
+    public void setStudent(){
+        student = new Student("Li mei");
+    }
+
+    @Test
+    public void testAverageScore() throws SomeException {
+        student.addSubject("math",new math(90.0,1.5));
+        student.addSubject("English",new english(85.0,1.2));
+
+        double expectedAverage = (90.0 * 1.5 + 85.0 * 1.2) / 2;
+        double actualAverage = student.weightsAverageScore();
+        //如果不给个差值,会出现误差 org.opentest4j.AssertionFailedError: Average score calculation is incorrect. ==>
+        //Expected :118.5
+        //Actual   :118.8
+        //assertEquals(expectedAverage, student.weightsAverageScore(), "Average score calculation is incorrect.");
+        assertEquals(expectedAverage, actualAverage, 1e-3,"Average score calculation is incorrect.");
+    }
+}
+
+
