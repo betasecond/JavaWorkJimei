@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="71d1a753-c47d-41e9-b0bb-22be206be66c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../task1009/code1009/src/gettotal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/one/Solution1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../task1009/code1009/src/total.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/aws.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/SomeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/SomeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/four/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/four/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/four/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/four/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/four/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/four/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/one/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/one/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/one/Solution1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/test/java/edu/jimei/one/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/three/WildAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/three/WildAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/two/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/two/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/two/computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/two/computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/two/english.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/two/english.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/two/math.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/two/math.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/two/politc.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/two/politc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/main/java/edu/jimei/two/subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/main/java/edu/jimei/two/subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/test/java/edu/jimei/four/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/test/java/edu/jimei/four/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/test/java/edu/jimei/one/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/test/java/edu/jimei/three/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/test/java/edu/jimei/three/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task1009/code/src/test/java/edu/jimei/two/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../task1009/code1009/src/test/java/edu/jimei/two/MainTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2XedEkNBRZ6iXMGi2hky3s2WQCd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/nbdhc/OneDrive/文档/Java实验/javaHomeWork/task1027/code1027",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="71d1a753-c47d-41e9-b0bb-22be206be66c" name="Changes" comment="" />
+      <created>1698993370892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698993370892</updated>
+      <workItem from="1698993372296" duration="2000" />
+    </task>
+    <servers />
+  </component>
+</project>

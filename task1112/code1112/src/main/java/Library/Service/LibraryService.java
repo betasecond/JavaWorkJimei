@@ -3,7 +3,7 @@ package Library.Service;
 import Library.Model.Book;
 import Library.Model.Library;
 import Library.Model.Shelf;
-import java.util.LinkedList;
+
 import java.util.ListIterator;
 
 public class LibraryService {
@@ -14,13 +14,11 @@ public class LibraryService {
     }
 
     public boolean addBookToShelf(Book book, String shelfPosition) {
-        // TODO
-        // 实现增加图书到指定书架的逻辑
-        // 这可能包括查找指定的书架，然后将图书添加到书架的集合中
+
         for (Shelf shelf:library.getShelves() ) {
             if(shelf.getPosition().equals(shelfPosition)){
                 shelf.getBooks().addLast(book);
-                System.out.println("add "+book.toString()+" to shelf : "+shelf.toString());
+                System.out.println("add "+book.toString()+" to shelf : "+ shelf);
                 return true;
             }
         }
@@ -80,6 +78,5 @@ public class LibraryService {
             }
         }
     }
-    // TODO
-    // 其他必要的服务方法...
+
 }
