@@ -7,6 +7,7 @@
         <groupId>edu.jimei</groupId>
         <artifactId>javaHomeWork</artifactId>
         <version>1.1-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <artifactId>lab6code</artifactId>

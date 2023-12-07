@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class JsonUtil {
 
-    private static final String FILE_NAME = "customerData.json"; // JSON文件名
+    private static final String FILE_NAME = "lab6/lab6code/src/main/resources/customerDatas.json"; // JSON文件名
 
     // 将客户对象列表序列化到文件
     public static void serializeCustomers(List<Customer> customers) throws IOException {
