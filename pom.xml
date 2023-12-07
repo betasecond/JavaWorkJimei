@@ -13,14 +13,18 @@
     
   <modules>
             
-    <module>task1009/code1009</module>
+    <module>lab1/lab1code</module>
             
-    <module>task1019/code1019</module>
+    <module>lab2/lab2code</module>
 
-    <module>task1027/code1027</module>
+    <module>lab3/lab3code</module>
 
-    <module>task1112/code1112</module>
-      
+    <module>lab4/lab4code</module>
+
+    <module>lab5/lab5code</module>
+
+    <module>lab6/lab6code</module>
+
   </modules>
     
   <name>javaHomeWork</name>

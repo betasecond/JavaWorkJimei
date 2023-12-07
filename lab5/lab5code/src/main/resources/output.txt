@@ -1,0 +1,9 @@
+1)C:\Users\nbdhc\.jdks\openjdk-20.0.2\bin\java.exe "-javaagent:C:\Users\nbdhc\AppData\Local\Programs\IntelliJ IDEA Ultimate\lib\idea_rt.jar=52690:C:\Users\nbdhc\AppData\Local\Programs\IntelliJ IDEA Ultimate\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\nbdhc\OneDrive\文档\Java实验\javaHomeWork\lab5\lab5code\target\classes;C:\Users\nbdhc\.m2\repository\org\jetbrains\annotations\24.1.0\annotations-24.1.0.jar;C:\Users\nbdhc\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar LineNumberer.LineNumberer
+2)java.io.FileNotFoundException: input.txt (The system cannot find the file specified)
+3)	at java.base/java.io.FileInputStream.open0(Native Method)
+4)	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+5)	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
+6)	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+7)	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+8)	at LineNumberer.LineNumberer.addLineNumbers(LineNumberer.java:14)
+9)	at LineNumberer.LineNumberer.main(LineNumberer.java:10)

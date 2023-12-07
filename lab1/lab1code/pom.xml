@@ -13,7 +13,7 @@
     </parent>
 
     <groupId>org.example</groupId>
-    <artifactId>code1009</artifactId>
+    <artifactId>lab1code</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
